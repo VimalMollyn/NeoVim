@@ -1,4 +1,4 @@
-# NeoVim configs in
+# NeoVim configs
 Now in pure lua!
 
 ## Instructions
