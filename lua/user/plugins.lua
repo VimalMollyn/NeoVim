@@ -53,6 +53,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "hrsh7th/cmp-nvim-lsp" -- cmp for lsp
+  use "hrsh7th/cmp-nvim-lua" -- cmp lua
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
 
   -- snippets
@@ -62,6 +64,8 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+  use "github/copilot.vim" -- github copilot
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
