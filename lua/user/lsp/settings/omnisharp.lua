@@ -2,7 +2,7 @@ local nvim_lsp = require'lspconfig'
 
 local pid = vim.fn.getpid()
 -- On linux/darwin if using a release build, otherwise under scripts/OmniSharp(.Core)(.cmd)
-local omnisharp_bin = "/opt/homebrew/bin/omnisharp"
+local omnisharp_bin = "omnisharp"
 
 return {
   cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) },

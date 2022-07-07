@@ -47,6 +47,7 @@ return packer.startup(function(use)
   -- colorschemes
   use "lunarvim/colorschemes" -- colorschemes
   use 'folke/tokyonight.nvim' -- colorschemes
+  use 'keith/parsec.vim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
