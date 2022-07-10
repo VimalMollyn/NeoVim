@@ -47,6 +47,7 @@ return packer.startup(function(use)
   -- colorschemes
   use "lunarvim/colorschemes" -- colorschemes
   use 'folke/tokyonight.nvim' -- colorschemes
+  use 'junegunn/seoul256.vim' -- colorschemes
   use 'keith/parsec.vim'
 
   -- cmp plugins

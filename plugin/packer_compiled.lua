@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/figlab/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["seoul256.vim"] = {
+    loaded = true,
+    path = "/Users/figlab/.local/share/nvim/site/pack/packer/start/seoul256.vim",
+    url = "https://github.com/junegunn/seoul256.vim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/Users/figlab/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
