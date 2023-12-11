@@ -57,25 +57,23 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "hrsh7th/cmp-nvim-lsp" -- cmp for lsp
   use "hrsh7th/cmp-nvim-lua" -- cmp lua
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use { "williamboman/mason.nvim" }
+  use { "williamboman/mason-lspconfig.nvim" }
+  use { "neovim/nvim-lspconfig" } -- enable LSP
 
-  -- use "github/copilot.vim" -- github copilot
-  
+  use { "github/copilot.vim" } -- github copilot
+
   -- Nvim tree 
-  use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua'
-
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
   -- toggleterm
   use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

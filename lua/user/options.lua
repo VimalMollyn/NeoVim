@@ -45,3 +45,8 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]] -- adds '-' to be considered part of the word
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+-- if the github copilot plugin is installed, disable the default mappings
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+vim.g.copilot_tab_fallback = ""
