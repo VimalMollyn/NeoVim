@@ -51,6 +51,15 @@ require("lazy").setup({
 
   -- toggleterm
   { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" },
+
+  -- comments
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+    },
+    lazy = false,
+  },
 })
 
 
