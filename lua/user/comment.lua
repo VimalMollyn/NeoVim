@@ -3,11 +3,11 @@ if not status_ok then
 	return
 end
 
-comment.setup({
-    toggler = {
-        ---Line-comment toggle keymap
-        line = 'gcc',
-        ---Block-comment toggle keymap
-        block = 'gbc',
-    },
-})
+-- comment.setup({
+--     toggler = {
+--         ---Line-comment toggle keymap
+--         line = 'gcc',
+--         ---Block-comment toggle keymap
+--         block = 'gbc',
+--     },
+-- })

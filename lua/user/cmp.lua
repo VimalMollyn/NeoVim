@@ -48,6 +48,26 @@ cmp.setup {
     -- Accept currently selected item. If none selected, `select` first item.
     -- Set `select` to `false` to only confirm explicitly selected items.
     ["<CR>"] = cmp.mapping.confirm { select = false },
+    ["<Up>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s",
+    }), -- <Up>
+    ["<Down>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s",
+    }), -- <Down>
     ["<Tab>"] = cmp.mapping(function(fallback)
       local copilot_keys = vim.fn["copilot#Accept"]()
       if copilot_keys ~= "" then
