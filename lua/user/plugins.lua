@@ -25,6 +25,7 @@ require("lazy").setup({
   'folke/tokyonight.nvim', -- colorschemes
   'junegunn/seoul256.vim', -- colorschemes
   'keith/parsec.vim',
+  { 'kepano/flexoki-neovim', commit = "9904170" },
 
   -- cmp plugins
   "hrsh7th/nvim-cmp", -- The completion plugin
@@ -44,6 +45,7 @@ require("lazy").setup({
   -- Nvim tree 
   {
     'nvim-tree/nvim-tree.lua',
+    tag = "v1.7.0",
     dependencies = {
       'nvim-tree/nvim-web-devicons', -- optional
     },
