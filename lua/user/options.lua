@@ -50,3 +50,13 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_assume_mapped = true
 vim.g.copilot_tab_fallback = ""
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "tex" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true
+    vim.keymap.set("n", "j", "gj", { buffer = true })
+    vim.keymap.set("n", "k", "gk", { buffer = true })
+  end,
+})
